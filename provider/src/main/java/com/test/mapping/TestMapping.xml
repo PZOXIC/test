@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.test.dao.TestDao">
+	<resultMap id="BaseResultMap" type="com.test.entity.Test">
+		<result column="tn" property="tn" jdbcType="VARCHAR" />
+	</resultMap>
+	<sql id="Base_Column_List">
+		tn
+	</sql>
+	<select id="selectRecord" resultMap="BaseResultMap"
+		parameterType="java.lang.String">
+		select
+		<include refid="Base_Column_List"></include>
+		from TESTA
+		<where>
+			1=1
+			<if test="tn!=null and tn!=''">
+				ADN TN = #{tn, jdbcType=VARCHAR}
+			</if>
+		</where>
+	</select>
+	<delete id="deleteRecord" parameterType="java.lang.String">
+		delete from TESTA
+		<where>
+			1=1
+			<if test="tn!=null and tn!=''">
+				ADN TN = #{tn, jdbcType=VARCHAR}
+			</if>
+		</where>
+	</delete>
+</mapper>

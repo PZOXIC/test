@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.6.0">
+	<wb-module deploy-name="provider">
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/target/classes"/>
+        <wb-resource deploy-path="/WEB-INF" source-path="/src/main/webapp/WEB-INF"/>
+        <wb-resource deploy-path="/" source-path="/src/main/webapp/page"/>
+        <dependent-module archiveName="interface.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/interface/interface">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+		<property name="java-output-path" value="/provider/target/classes"/>
+        <property name="context-root" value="provider"/>
+	</wb-module>
+</project-modules>
