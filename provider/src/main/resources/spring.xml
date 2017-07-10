@@ -15,12 +15,13 @@ http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd">
 	
 	<!-- 加载配置 -->
 	<context:property-placeholder location="classpath*:jdbc.properties" />
+	<context:property-placeholder location="classpath*:redis.properties" />
+	
 	<import resource="classpath:spring-dao.xml"/>
-	
-	<!-- 加载dubbo配置 -->
+	<import resource="classpath:spring-aop.xml"/>
+	<import resource="classpath:spring-filter.xml"/>
 	<import resource="classpath:dubbo.xml"/>
-	
-	<!-- 加载redis配置 -->
 	<import resource="classpath:redis.xml"/>
+	
 	
 </beans>

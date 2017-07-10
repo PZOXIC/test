@@ -14,17 +14,18 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<log4j.version>1.2.16</log4j.version>
 		<spring.version>4.0.5.RELEASE</spring.version>
-		<mybatis.version>3.1.1</mybatis.version>
+		<mybatis.version>3.4.1</mybatis.version>
 		<dubbo.version>2.5.3</dubbo.version>
 		<zk.version>3.3.3</zk.version>
 		<mysql.version>5.1.34</mysql.version>
-		<mybatis-spring.version>1.2.2</mybatis-spring.version>
+		<mybatis-spring.version>1.3.0</mybatis-spring.version>
 		<druid.version>1.0.12</druid.version>
 		<aspectj.version>1.8.9</aspectj.version>
 		<zkclient.version>0.1</zkclient.version>
 		<cglib.version>3.2.4</cglib.version>
 		<jedis.version>2.7.3</jedis.version>
 		<redis.version>1.7.2.RELEASE</redis.version>
+		<pagehelper.version>4.0.0</pagehelper.version>
 	</properties>
 
 	<dependencies>
@@ -168,7 +169,12 @@
 			<artifactId>spring-data-redis</artifactId>
 			<version>${redis.version}</version>
 		</dependency>
-
+		
+		<dependency>
+			<groupId>com.github.pagehelper</groupId>
+			<artifactId>pagehelper</artifactId>
+			<version>${pagehelper.version}</version>
+		</dependency>
 
 		<dependency>
 			<groupId>com.test</groupId>

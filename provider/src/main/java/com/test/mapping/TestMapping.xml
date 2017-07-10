@@ -11,7 +11,7 @@
 		parameterType="java.lang.String">
 		select
 		<include refid="Base_Column_List"></include>
-		from TESTA
+		from TEST
 		<where>
 			1=1
 			<if test="tn!=null and tn!=''">
@@ -20,7 +20,7 @@
 		</where>
 	</select>
 	<delete id="deleteRecord" parameterType="java.lang.String">
-		delete from TESTA
+		delete from TEST
 		<where>
 			1=1
 			<if test="tn!=null and tn!=''">

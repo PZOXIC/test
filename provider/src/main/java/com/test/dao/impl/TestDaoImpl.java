@@ -14,6 +14,7 @@ public class TestDaoImpl extends MyBatisDao implements TestDao{
 	
 	private static final String namespace = "com.test.dao.TestDao.";
 
+	@SuppressWarnings("unchecked")
 	@Override
 	public List<Test> selectRecord(String arg) throws Exception{
 		return (List<Test>)super.queryForList(namespace + "selectRecord", arg);
