@@ -1,9 +1,7 @@
-package com.test.service;
+package com.test.dubbo;
 
-
-
-public interface ITestService {
+public interface DubboService {
 	String selectByKey(String key) throws Exception;
-	
+
 	int insert(String value) throws Exception;
 }

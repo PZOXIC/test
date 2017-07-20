@@ -1,1 +1,9 @@
-/target/
+target/
+.settings/
+bin/
+*.MF
+*.class
+*.MF
+.classpath
+.project
+pom.xml
